@@ -1,14 +1,15 @@
 import { Container, Title, FlexWrap } from "../styles/Home"
 import MovieCard from "../components/MovieCard"
 
-export async function getServerSideProps() {
-  const res = await fetch("http://localhost:3000/api/trending")
+export async function getStaticProps() {
+  const res = await fetch("https://movies-lists-ssr.vercel.app/api/trending")
   const data = await res.json()
 
   return {
     props: {
       movies: data.list
-    }
+    },
+    revalidate: 500
   }
 }
 

@@ -22,7 +22,7 @@ export default function Movie({ movie }) {
 }
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`http://localhost:3000/api/movie/${context.params.id}`)
+  const res = await fetch(`https://movies-lists-ssr.vercel.app/api/movie/${context.params.id}`)
   const data = await res.json()
 
   return {

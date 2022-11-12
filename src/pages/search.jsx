@@ -8,7 +8,7 @@ export default function About() {
 
   async function SearchMovies() {
     if (textInput != "") {
-      const res = await fetch(`http://localhost:3000/api/search?name=${textInput}`)
+      const res = await fetch(`/api/search?name=${textInput}`)
       const data = await res.json()
 
       setMovies(data.list)
