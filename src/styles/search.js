@@ -13,11 +13,13 @@ export const Inputs = styled.div`
   margin: 50px 0;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
   gap: 20px;
 
   input, button {
     padding: 10px;
-    width: 30rem;
+    width: 100%;
     height: 2rem;
     border-radius: 5px;
     border: 2px solid var(--border);

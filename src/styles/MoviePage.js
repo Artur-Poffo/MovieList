@@ -7,15 +7,21 @@ export const Container = styled.div`
 `
 export const Bg = styled.div`
   padding: 60px;
-  position: relative;
   width: 100vw;
   height: 100vh;
   background-image: radial-gradient(farthest-side at 73% 21%, transparent, rgb(26, 29, 41)), url(${(props) => props.src});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 630px) {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
 `
 export const Infos = styled.div`
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -23,7 +29,7 @@ export const Infos = styled.div`
 
   h1 {
     letter-spacing: 3px;
-    margin-bottom: 10px;
+    margin: 10px 0;
   }
 
   p {
@@ -48,4 +54,9 @@ export const GenreList = styled.ul`
   letter-spacing: 2px;
   gap: 30px;
   margin: 10px 0 20px 0;
+
+  @media (max-width: 630px) {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
 `

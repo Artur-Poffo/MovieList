@@ -10,7 +10,7 @@ export default function Movie({ movie }) {
           <GenreList>
             {movie.genres.map(genre => {
               return (
-                <li key={genre.id} >{genre.name}</li>
+                <li key={genre.id} >{genre.name};</li>
               )
             })}
           </GenreList>
