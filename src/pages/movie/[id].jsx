@@ -21,13 +21,21 @@ export default function Movie({ movie }) {
   )
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: "blocking",
+  }
+}
+
+export async function getStaticProps(context) {
   const res = await fetch(`https://movies-lists-ssr.vercel.app/api/movie/${context.params.id}`)
   const data = await res.json()
 
   return {
     props: {
       movie: data.movie
-    }
+    },
+    revalidate: 1000
   }
 }
