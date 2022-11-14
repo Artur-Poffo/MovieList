@@ -4,6 +4,16 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "image.tmdb.org",
+        port: "",
+        pathname: "/t/p/**"
+      }
+    ]
+  }
 }
 
 module.exports = nextConfig
