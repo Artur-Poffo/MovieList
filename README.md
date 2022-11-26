@@ -1,15 +1,15 @@
-# Movie-List:
+# MovieList:
 
-> Status: Versão 1.0.0
+> Status: Version 1.0.0 🚀
 
-Lista de filmes que consulta dados de uma API externa do TMDB, te permite ver informações dos filmes mais populares do momento e pesquisar por filmes.
+Movie list that queries data from an external TMDB API, allows you to see information about the most popular movies of the moment and search for movies.
 
-## Tecnologias:
+## Technologies:
 - React.js
-- Next.js (com SSG e ISR)
+- Next.js (with SSG and ISR)
 - styled-components
 - ESlint
 - Node.js
 - JavaScript
 
-**Lista de Filmes em Next.js**
+**Movie List with Next.js**
