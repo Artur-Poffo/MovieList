@@ -1,5 +1,5 @@
 <a href="https://movies-lists-ssr.vercel.app" >
-  <img src="https://images2.imgbox.com/13/20/JwAp9MDC_o.png" alt="Print Project" >
+  <img height="100%" src="https://images2.imgbox.com/13/20/JwAp9MDC_o.png" alt="Print Project" >
 </a>
 
 # MovieList:
